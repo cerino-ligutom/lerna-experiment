@@ -71,4 +71,4 @@ Run an npm script in each package that contains that script.
 Bump version of packages changed since the last release.
 
 `bump`: Increment version(s) by explicit version _or_ semver keyword,
-'major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease', 'from-git', or 'from-package'
+'major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', or 'prerelease'.
