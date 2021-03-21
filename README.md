@@ -66,7 +66,7 @@ Run an npm script in each package that contains that script.
 
 ---
 
-## `lerna run version [bump]`
+## `lerna version [bump]`
 
 Bump version of packages changed since the last release.
 
