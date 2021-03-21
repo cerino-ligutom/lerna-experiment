@@ -63,3 +63,12 @@ Do note this can behave differently depending on the value of `version` field in
 ## `lerna run <script>`
 
 Run an npm script in each package that contains that script.
+
+---
+
+## `lerna run version [bump]`
+
+Bump version of packages changed since the last release.
+
+`bump`: Increment version(s) by explicit version _or_ semver keyword,
+'major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease', 'from-git', or 'from-package'
