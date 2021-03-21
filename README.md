@@ -57,3 +57,9 @@ Publish packages in the current project.
 'major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease', 'from-git', or 'from-package'
 
 Do note this can behave differently depending on the value of `version` field in the lerna config file.
+
+---
+
+## `lerna run <script>`
+
+Run an npm script in each package that contains that script.
