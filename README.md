@@ -46,3 +46,14 @@ For example, the command below will run `ls -al` on each lerna package.
 ```shell
 lerna exec -- ls -al
 ```
+
+---
+
+## `lerna publish [bump]`
+
+Publish packages in the current project.
+
+`bump`: Increment version(s) by explicit version _or_ semver keyword,
+'major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease', 'from-git', or 'from-package'
+
+Do note this can behave differently depending on the value of `version` field in the lerna config file.
