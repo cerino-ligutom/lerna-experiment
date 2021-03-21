@@ -10,7 +10,7 @@ Add a single dependency to matched globs of lerna packages
 
 | Example                                    | Description                                                                  |
 | ------------------------------------------ | ---------------------------------------------------------------------------- |
-| `lerna add module1 packages/prefix-\* `    | Adds the `module1` package to the packages in the 'prefix-' prefixed folders |
+| `lerna add module1 packages/prefix-\*`     | Adds the `module1` package to the packages in the 'prefix-' prefixed folders |
 | `lerna add module1 --scope=module2`        | Install `module1` to `module2`                                               |
 | `lerna add module1 --scope=module2 --dev`  | Install `module1` to `module2` in devDependencies                            |
 | `lerna add module1 --scope=module2 --peer` | Install `module1` to `module2` in peerDependencies                           |
@@ -63,6 +63,12 @@ Do note this can behave differently depending on the value of `version` field in
 ## `lerna run <script>`
 
 Run an npm script in each package that contains that script.
+
+If you want to run a script on a specific package alone, specify `--scope`. In the example below, the `test` script should be present in the `package.json` file.
+
+```sh
+lerna run test --scope module1
+```
 
 ---
 
